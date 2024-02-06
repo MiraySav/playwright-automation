@@ -31,7 +31,7 @@ test("Print the names of the products on home page", async ({ page }) => {
     // console.log(producttext);
   }
 });
-test.only("Add product to the cart", async ({ page }) => {
+test("Add product to the cart", async ({ page }) => {
   const home = new HomePage(page);
   await home.addProductToCart("Nexus 6");
   await page.waitForTimeout(3000);
